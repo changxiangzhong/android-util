@@ -1,4 +1,4 @@
-package no.hyper.androidutil.view.viewpager;
+package no.hyper.androidutil.view.smartviewpager;
 
 import android.support.v4.view.ViewPager;
 import android.util.Log;
