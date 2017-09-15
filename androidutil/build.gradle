@@ -12,13 +12,13 @@ buildscript {
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'android-util'
+    bintrayName = 'androidutil'
 
-    publishedGroupId = 'no.hyper.motimate'
+    publishedGroupId = 'no.hyper'
     libraryName = 'android-util'
-    artifact = 'android-util'
+    artifact = 'androidutil'
 
-    libraryDescription = 'Common comonents for motimate trainings'
+    libraryDescription = 'Common comonents for android project'
 
     siteUrl = 'https://github.com/changxiangzhong/android-util'
     gitUrl = 'https://github.com/changxiangzhong/android-util'
