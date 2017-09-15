@@ -1,5 +1,30 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'android-util'
+
+    publishedGroupId = 'no.hyper.motimate'
+    libraryName = 'android-util'
+    artifact = 'android-util'
+
+    libraryDescription = 'Common comonents for motimate trainings'
+
+    siteUrl = 'https://github.com/changxiangzhong/android-util'
+    gitUrl = 'https://github.com/changxiangzhong/android-util'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'chang'
+    developerName = 'Chang'
+    developerEmail = 'chang@hyper.no'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
@@ -30,3 +55,6 @@ dependencies {
     compile "com.squareup.picasso:picasso:${picassoVersion}"
     testCompile 'junit:junit:4.12'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
