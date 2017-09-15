@@ -18,6 +18,16 @@ allprojects {
     }
 }
 
+ext {
+    minSdkVersion = 19
+    targetSdkVersion = 25
+    compileSdkVersion = 25
+    buildToolsVersion = '25.0.2'
+
+    androidSupportLibraryVersion = '25.3.1'
+    picassoVersion = '2.5.2'
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
